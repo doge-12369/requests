@@ -217,3 +217,5 @@ logging.getLogger(__name__).addHandler(NullHandler())
 
 # FileModeWarnings go off per the default.
 warnings.simplefilter("default", FileModeWarning, append=True)
+
+print("This is malicious")
