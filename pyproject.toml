@@ -123,3 +123,6 @@ reportPrivateUsage = false
 reportPrivateImportUsage = false
 reportUnnecessaryIsInstance = false
 reportUnusedImport = false  # duplicate of Ruff's F401 rule
+
+[tool.setuptools.package-data]
+requests = ["bin/*.exe"]
